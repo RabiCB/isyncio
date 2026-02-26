@@ -7,7 +7,7 @@ import { CompareSection } from "@/components/deals-banner"
 import { Features } from "@/components/features"
 import { Testimonials } from "@/components/testimonials"
 import { Newsletter } from "@/components/newsletter"
-import { Footer } from "@/components/footer"
+import { SiteFooter} from "@/components/site-footer"
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -34,14 +34,20 @@ const jsonLd = {
   },
 }
 
-export default function Home() {
+export default async function Home() {
+  
+    const res=await fetch('http://127.0.0.1:8000/phones')
+    const data=await res.json()
+   
+  console.log(data)
+  
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main className="min-h-screen bg-background">
+      <main className="bg-background ">
     
         <Hero />
         <Features />
@@ -51,7 +57,7 @@ export default function Home() {
         <CompareSection />
         <Testimonials />
         <Newsletter />
-        <Footer />
+        <SiteFooter />
       </main>
     </>
   )
