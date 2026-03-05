@@ -14,7 +14,7 @@ export function PhoneHero() {
           <div className="mb-4 flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5">
             <Smartphone className="h-3.5 w-3.5 text-primary" />
             <span className="text-xs font-semibold uppercase tracking-wider text-primary">
-              2026 Lineup
+              2026 Lineupxxx
             </span>
           </div>
 
