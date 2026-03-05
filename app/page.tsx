@@ -36,10 +36,6 @@ const jsonLd = {
 
 export default async function Home() {
   
-    const res=await fetch('http://127.0.0.1:8000/phones')
-    const data=await res.json()
-   
-  console.log(data)
   
   return (
     <>
