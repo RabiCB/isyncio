@@ -142,7 +142,7 @@ function PhoneCard({ phone }: { phone: PhoneData }) {
             className="w-full rounded-full font-semibold text-xs text-white"
             style={{ background: accent }}
           >
-            <Link href={`/phones/${phone.slug}`}>
+            <Link href={`/phone/${phone.slug}`}>
               View Full Specs <ArrowRight className="ml-1 h-3 w-3" />
             </Link>
           </Button>

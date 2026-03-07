@@ -1,0 +1,27 @@
+// types/phone.ts
+
+export interface Phone {
+  id: number
+  name: string
+  slug: string
+  brand: string
+  model: string
+  ram: string
+  storage: string
+  battery: string
+  screen_size: string
+  screen_resolution: string
+  main_camera: string
+  selfie_camera: string
+  image: string
+  release_date: string
+  colors: string[]
+  features: string[]
+}
+
+export interface PhonesResponse {
+  phones: Phone[]
+  last_cursor: number
+  has_more: boolean
+  count: number
+}
